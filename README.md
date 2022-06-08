@@ -10,7 +10,7 @@ The data that I was given was a txt file containing the information of 57 cancer
 For each patient the information known was the weight, age(both in days and years), vital status, days to birth and year of birth, days to death and year of death, clinical stage and a matrix of genes (1 by 60,660). In each column was located the information of each patient, meanwhile the fields were determined on each row.
 In order to make the data accessible to the models, it was needed to be normalised.
 First, the txt file was read using “tab” as a delimiter to ensure the correct read of the information, and stored as a data set. A row of numbers from 0 to 56 was added as a header to aid in the next step, which would be transposing the table.<br><br>
- ![image](https://user-images.githubusercontent.com/72141834/172512547-3e0cf145-0f66-4234-9b8d-e3a037fe93f5.png)
+![image](https://user-images.githubusercontent.com/72141834/172514968-87c0ecc5-2ce8-40d6-a6a2-e9d270dfc034.png)
 <br><br>
 When accessing information from the data set, python (more specifically, the library “pandas”) prefers each row to be the different patients (cases) and each column to contain the different fields, therefore, a transposition is needed. It is also needed to allow “pandas” to read the correct data type that might otherwise result in the training being less efficient and accurate.<br><br>
  ![image](https://user-images.githubusercontent.com/72141834/172512574-3dafc6a7-c997-44e8-b69d-9d31ea3924b5.png)<br><br>
