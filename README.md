@@ -96,3 +96,10 @@ The model that proved to be the most accurate out of all the other algorithms wa
 These numbers are not the best as the score of 100% is highly unlikely to be able to apply to a broader range of patients, as some overfitting might be occurring in the dataset.<br>
 The overall testing accuracy of all the models was pretty low (peaking at a max of 58%), which indicates that the models might need more training.<br>
 In retrospect, the main issue with the model training was with high probability the dataset size. Having only 57 patients and 60000+ fields, the models would struggle to train accurately on a broad range of gene matrix. Perhaps, the best approach to solve this problem would be to apply weights into the training of ANN(artificial neural networks), or simply increase the number of patient records.<br>
+
+## Update - Days left prediction
+It is possible now to also predict the days that a patient has left until death if they are correctly classified as dead.<br>
+![image](https://user-images.githubusercontent.com/72141834/173203869-ae14a192-7565-4231-a5c3-3b48d5042584.png)
+
+<br><br>
+#### Let me know what you think about the project!
